@@ -46,29 +46,7 @@ The project demonstrates important frontend development concepts such as:
 
 ---
 
-# 🖼 Project Preview
 
-Add your project screenshot here.
-
-Example:
-
-```markdown
-![Project Preview](screenshots/homepage.png)
-```
-
-Create a folder named:
-
-```
-screenshots
-```
-
-Then add an image like:
-
-```
-homepage.png
-```
-
----
 
 # 🛠 Tech Stack
 
@@ -198,4 +176,5 @@ Built with ❤️ using React and Tailwind CSS.
 If you found this project helpful, please consider giving it a ⭐ on GitHub.
 
 ---
+
 
