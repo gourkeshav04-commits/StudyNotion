@@ -11,6 +11,9 @@ import GoogleSignInEmail from "./Components/GoogleSignin";
 import GooglePassword from "./Components/Googlepassword";
 import Contact from './pages/Contact'
 import About from './pages/About'
+import Cart from "./pages/Cart";
+import CourseDetail from "./pages/CourseDetail";
+
 
 const App = () => {
 
@@ -40,7 +43,10 @@ const App = () => {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/logout" element={<Home />} />
         <Route path="/GoogleSignin" element={<GoogleSignInEmail />} />
-         <Route path="/GooglePassword" element={<GooglePassword />} />
+        <Route path="/GooglePassword" element={<GooglePassword />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/course/:id" element={<CourseDetail />} />
+
       </Routes>
 
       
