@@ -1,70 +1,189 @@
-# Getting Started with Create React App
+<h1 align="center">        
+  💲 StudyNotion by Apex
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  A modern e-learning platform frontend inspired by StudyNotion, built with React and Tailwind CSS.  
+  This project provides a clean UI for browsing courses, authentication pages, and an interactive learning dashboard.
+</p>
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+# 🌟 Features
 
-### `npm start`
+* **Modern UI Design** – Clean and responsive interface built using Tailwind CSS
+* **Course Marketplace** – Browse multiple professional courses with details and pricing
+* **Interactive Course Cards** – Expand descriptions with *Read More / Show Less*
+* **Course Management** – Remove courses dynamically and refresh course list
+* **Authentication Pages** – Login and Signup pages included
+* **Google Sign-In Flow** – Custom Google email and password authentication pages
+* **Dashboard Page** – Dedicated dashboard route for logged-in users
+* **Responsive Layout** – Works across desktop, tablet, and mobile devices
+* **Dynamic Routing** – Implemented using React Router
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# 🎨 UI Highlights
 
-### `npm test`
+* Beautiful **course cards with hover animations**
+* **Dynamic course grid layout**
+* Smooth UI transitions
+* Dark themed modern interface
+* Professional landing page structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+# 🚀 Quick Start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Make sure you have installed:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Node.js (v16 or higher)
+* npm or yarn
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 1️⃣ Clone the repository
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+git clone https://github.com/yourusername/studynotion-apex.git
+cd studynotion-apex
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 2️⃣ Install dependencies
 
-## Learn More
+```bash
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 3️⃣ Run the development server
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm start
+```
 
-### Code Splitting
+### 4️⃣ Open in browser
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+http://localhost:3000
+```
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# 📖 Usage
 
-### Making a Progressive Web App
+1. Visit the **Home Page** to explore available courses
+2. Click **Read More** to see full course descriptions
+3. Remove courses using the **Remove Course** button
+4. Use **Login / Signup** to simulate authentication
+5. Navigate through **Dashboard, About, Contact** pages
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+# 🛠️ Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**Frontend**
 
-### Deployment
+* React.js
+* React Router DOM
+* Tailwind CSS
+* JavaScript (ES6)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**UI & Styling**
 
-### `npm run build` fails to minify
+* Tailwind CSS
+* Responsive Grid Layout
+* Custom animations
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+# 📂 Project Structure
+
+```
+StudyNotion-Apex/
+│
+├── src/
+│   ├── Components/
+│   │   ├── Navbar.js
+│   │   ├── GoogleSignin.js
+│   │   └── GooglePassword.js
+│   │
+│   ├── pages/
+│   │   ├── Home.js
+│   │   ├── Dashboard.js
+│   │   ├── Login.js
+│   │   ├── Signup.js
+│   │   ├── About.js
+│   │   └── Contact.js
+│   │
+│   ├── App.js
+│   └── index.js
+│
+├── public/
+└── package.json
+```
+
+---
+
+# 🎯 Key Functionalities
+
+### Dynamic Course Rendering
+
+Courses are rendered using React's `map()` function and managed through state.
+
+### State Management
+
+React `useState` is used to manage course data and authentication state.
+
+### Navigation
+
+Routing is implemented using **React Router DOM**.
+
+### Page Refresh Handling
+
+A `useEffect` hook detects refresh and redirects users to the Home page.
+
+---
+
+# 📊 Example Features in Code
+
+* Course cards with pricing and tags
+* Expandable course descriptions
+* Remove course functionality
+* Refresh courses feature
+* Protected dashboard route structure
+
+---
+
+# 🔮 Future Enhancements
+
+* [ ] Backend integration
+* [ ] Real authentication with JWT
+* [ ] Payment gateway integration
+* [ ] Course video player
+* [ ] Student progress tracking
+* [ ] Instructor dashboard
+* [ ] Course reviews and ratings
+* [ ] Search and filter courses
+
+---
+
+# 👨‍💻 Developer
+
+**Keshav Gour (Apex)**
+Frontend Developer
+
+Built with ❤️ using React and Tailwind CSS.
+
+---
+
+# ⭐ Support
+
+If you found this project helpful, please consider **starring the repository**.
+
+```
+⭐ Star the repo to support the project!
+```
