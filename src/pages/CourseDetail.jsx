@@ -147,7 +147,7 @@ export default function CourseDetail() {
           {/* What You'll Learn */}
           <section>
             <h2 className="text-2xl font-extrabold text-white mb-6 flex items-center gap-2">
-              <span className="text-emerald-400">✦</span> What You'll Learn
+              <span className="text-emerald-400">✦</span> What You'll Learn Here
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {course.highlights.map((point, i) => (
